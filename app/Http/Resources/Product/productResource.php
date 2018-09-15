@@ -19,7 +19,10 @@ class ProductResource extends JsonResource
             'description' => $this->detail,
             'price' => $this->price,
             'stock' => $this->stock,
-            'discount' => $this->discount
+            'discount' => $this->discount,
+            'href' => ['link' => route('products.show',$this->id)
+            ]
+
 
         ];
     }
